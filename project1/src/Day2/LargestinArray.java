@@ -7,24 +7,20 @@ public class LargestinArray {
         System.out.println("enter 5 number");
         Scanner scanner=new Scanner(System.in);
         int arr[]=new int[5];
-        int arr1[]=new int[5];
-        try{
-        for (int i=0;i<5;i++){
-            arr[i]=scanner.nextInt();
-        }
-        }catch (Exception e){
-            System.out.println("Invalid input \n enter again");
-            scanner.close();
-        }
-        finally {
 
-            Scanner scanner1=new Scanner(System.in);
-            System.out.println("Enter number");
-            for (int i = 0; i < 5; i++) {
 
-                arr1[i] = scanner1.nextInt();
-            }
-        }
+       try{
+           for (int i=0;i<5;i++){
+               arr[i]=scanner.nextInt();
+           }
+       }catch (Exception e){
+           System.out.println("error"+e.getMessage());
+           for (int j=0;j<5;j++){
+               arr[j]=scanner.nextInt();
+           }
+
+       }
+
         findLarge(arr);
 
 
