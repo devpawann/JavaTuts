@@ -1,0 +1,5 @@
+Difference between thread and process?
+--> Process can be defined as the program which currently under execution.It gets separate space in memory which is not shared among other.Comparatievly process can be called as a heavy task.And there can be threads inside a process.
+
+-->Thread can be defined as a lightweight independent program running and managed by scheduler.It can be a part of process
+
